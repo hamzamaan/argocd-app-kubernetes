@@ -5,8 +5,9 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source: https://github.com/hamzamaan/argocd-app-kubernetes.git
-    targetRevision: HEAD
+  source: 
+    repoURL: https://github.com/hamzamaan/argocd-app-kubernetes.git
+    targetRevision: Head
     path: dev
   destination: 
     server: https://kubernetes.default.svc
