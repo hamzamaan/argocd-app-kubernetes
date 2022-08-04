@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: my-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: my-app
     spec:
       containers:
-      - name: myapp
+      - name: nginx-app
         image: nginx
         ports:
         - containerPort: 8080
